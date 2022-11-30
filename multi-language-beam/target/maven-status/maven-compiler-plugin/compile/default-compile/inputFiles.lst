@@ -1,0 +1,11 @@
+/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/src/main/java/org/apache/beam/examples/subprocess/utils/FileUtils.java
+/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/src/main/java/org/apache/beam/examples/subprocess/utils/CallingSubProcessUtils.java
+/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/src/main/java/org/apache/beam/examples/multilanguage/PythonDataframeWordCount.java
+/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/src/main/java/org/apache/beam/examples/subprocess/SubProcessPipelineOptions.java
+/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/src/main/java/org/apache/beam/examples/subprocess/ExampleEchoPipeline.java
+/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/src/main/java/org/apache/beam/examples/multilanguage/SklearnMnistClassification.java
+/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/src/main/java/org/apache/beam/examples/subprocess/kernel/SubProcessIOFiles.java
+/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/src/main/java/org/apache/beam/examples/subprocess/kernel/SubProcessCommandLineArgs.java
+/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/src/main/java/org/apache/beam/examples/subprocess/kernel/SubProcessKernel.java
+/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/src/main/java/org/apache/beam/examples/subprocess/utils/ExecutableFile.java
+/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/src/main/java/org/apache/beam/examples/subprocess/configuration/SubProcessConfiguration.java
