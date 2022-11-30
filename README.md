@@ -1,4 +1,4 @@
-# Steps 
+# Steps taken
 
 ### Step 0
 Setup venv and download apache-beam==2.43.0
