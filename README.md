@@ -16,3 +16,6 @@ Run pipeline with the `run.sh` script
 Reading and Writing locally does not seem to work. 
 Error in [logs](https://github.com/andres-vv/x-lang-testing/tree/main/logs):
 `java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv`
+
+
+Reading from a public gcs bucket works, but the sample problem arises when writing the output locally.
