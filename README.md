@@ -12,3 +12,10 @@ Build the Beam Java SDK container for a local pipeline execution as shown in [St
 ### Step 3
 Run pipeline with the `run.sh` script
 
+## Problem
+Reading and Writing locally does not seem to work. 
+Error in [logs](https://github.com/andres-vv/x-lang-testing/tree/main/logs):
+`java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv`
+
+
+Reading from a public gcs bucket works, but the sample problem arises when writing the output locally.
