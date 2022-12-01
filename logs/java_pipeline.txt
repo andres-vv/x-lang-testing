@@ -1,0 +1,179 @@
+sh run.sh
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.example:multi-language-beam >-------------------
+[INFO] Building multi-language-beam 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ multi-language-beam ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ multi-language-beam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ multi-language-beam ---
+Dec 01, 2022 9:59:46 AM org.apache.beam.sdk.extensions.python.transforms.RunInference inferExtraPackagesFromModelHandler
+INFO: Automatically inferred dependencies [scikit-learn, pandas] from the provided model handler.
+Dec 01, 2022 9:59:46 AM org.apache.beam.sdk.extensions.python.PythonService start
+INFO: Running bootstrap command [python3, /var/folders/mn/f6_bhwz11352dcw31jbvs7b00000gn/T/bootstrap_beam_venv3775883199078455845.py, --beam_version=2.43.0, --extra_packages=scikit-learn;pandas]
+Dec 01, 2022 9:59:47 AM org.apache.beam.sdk.extensions.python.PythonService start
+INFO: /Users/andresvervaecke/.apache_beam/cache/venvs/py-3.9-beam-2.43.0-58fa10bd297d1d33d0540cdb3637e9da88210341/bin/python
+Dec 01, 2022 9:59:47 AM org.apache.beam.sdk.extensions.python.PythonService start
+INFO: Starting python service with arguments [/Users/andresvervaecke/.apache_beam/cache/venvs/py-3.9-beam-2.43.0-58fa10bd297d1d33d0540cdb3637e9da88210341/bin/python, -m, apache_beam.runners.portability.expansion_service_main, --port=53025, --fully_qualified_name_glob=*, --pickle_library=cloudpickle, --requirements_file=/var/folders/mn/f6_bhwz11352dcw31jbvs7b00000gn/T/requirements12743039400185529022.txt]
+INFO:apache_beam.runners.portability.stager:Executing command: ['/Users/andresvervaecke/.apache_beam/cache/venvs/py-3.9-beam-2.43.0-58fa10bd297d1d33d0540cdb3637e9da88210341/bin/python', '-m', 'pip', 'download', '--dest', '/var/folders/mn/f6_bhwz11352dcw31jbvs7b00000gn/T/dataflow-requirements-cache', '-r', '/var/folders/mn/f6_bhwz11352dcw31jbvs7b00000gn/T/tmpk1zhe0es/tmp_requirements.txt', '--exists-action', 'i', '--no-deps', '--implementation', 'cp', '--abi', 'cp39', '--platform', 'manylinux2014_x86_64']
+INFO:root:Default Python SDK image for environment is apache/beam_python3.9_sdk:2.43.0
+INFO:root:No image given, using default Python SDK image
+INFO:root:Default Python SDK image for environment is apache/beam_python3.9_sdk:2.43.0
+INFO:root:Python SDK container image set to "apache/beam_python3.9_sdk:2.43.0" for Docker environment
+INFO:__main__:Listening for expansion requests at 53025
+INFO:root:Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+INFO:__main__:Shutting down expansion service.
+Dec 01, 2022 9:59:51 AM org.apache.beam.sdk.Pipeline validate
+WARNING: The following transforms do not have stable unique names: MapElements
+Dec 01, 2022 9:59:53 AM org.apache.beam.runners.portability.PortableRunner run
+INFO: Using job server endpoint: localhost:8080
+Dec 01, 2022 9:59:53 AM org.apache.beam.runners.portability.PortableRunner run
+INFO: PrepareJobResponse: preparation_id: "sklearnmnistclassification-andresvervaecke-1201085953-16487746-d9b44259-bffc-42c6-957a-c1d2136065d1"
+artifact_staging_endpoint {
+  url: "localhost:8080"
+}
+staging_session_token: "sklearnmnistclassification-andresvervaecke-1201085953-16487746-d9b44259-bffc-42c6-957a-c1d2136065d1"
+
+Dec 01, 2022 9:59:54 AM org.apache.beam.runners.portability.PortableRunner run
+INFO: RunJobResponse: job_id: "sklearnmnistclassification-andresvervaecke-1201085953-16487746-d9b44259-bffc-42c6-957a-c1d2136065d1"
+
+[WARNING] 
+java.lang.RuntimeException: The Runner experienced the following error during execution:
+Traceback (most recent call last):
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/local_job_service.py", line 296, in _run_job
+    self.result = self._invoke_runner()
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/local_job_service.py", line 318, in _invoke_runner
+    return fn_runner.FnApiRunner(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 212, in run_via_runner_api
+    return self.run_stages(stage_context, stages)
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 442, in run_stages
+    bundle_results = self._execute_bundle(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 770, in _execute_bundle
+    self._run_bundle(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 999, in _run_bundle
+    result, splits = bundle_manager.process_bundle(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1348, in process_bundle
+    raise RuntimeError(result.error)
+RuntimeError: org.apache.beam.sdk.util.UserCodeException: java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv
+        at org.apache.beam.sdk.util.UserCodeException.wrap(UserCodeException.java:39)
+        at org.apache.beam.sdk.io.Read$BoundedSourceAsSDFWrapperFn$DoFnInvoker.invokeSplitRestriction(Unknown Source)
+        at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForSplitRestriction(FnApiDoFnRunner.java:889)
+        at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+        at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+        at org.apache.beam.fn.harness.FnApiDoFnRunner.outputTo(FnApiDoFnRunner.java:1791)
+        at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForPairWithRestriction(FnApiDoFnRunner.java:826)
+        at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+        at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+        at org.apache.beam.fn.harness.FnApiDoFnRunner.outputTo(FnApiDoFnRunner.java:1791)
+        at org.apache.beam.fn.harness.FnApiDoFnRunner.access$3000(FnApiDoFnRunner.java:145)
+        at org.apache.beam.fn.harness.FnApiDoFnRunner$NonWindowObservingProcessBundleContext.outputWithTimestamp(FnApiDoFnRunner.java:2360)
+        at org.apache.beam.fn.harness.FnApiDoFnRunner$ProcessBundleContextBase.output(FnApiDoFnRunner.java:2530)
+        at org.apache.beam.sdk.transforms.DoFnOutputReceivers$WindowedContextOutputReceiver.output(DoFnOutputReceivers.java:78)
+        at org.apache.beam.sdk.io.Read$OutputSingleSource.processElement(Read.java:1018)
+        at org.apache.beam.sdk.io.Read$OutputSingleSource$DoFnInvoker.invokeProcessElement(Unknown Source)
+        at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForParDo(FnApiDoFnRunner.java:801)
+        at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+        at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+        at org.apache.beam.fn.harness.BeamFnDataReadRunner.forwardElementToConsumer(BeamFnDataReadRunner.java:213)
+        at org.apache.beam.sdk.fn.data.BeamFnDataInboundObserver2.multiplexElements(BeamFnDataInboundObserver2.java:158)
+        at org.apache.beam.sdk.fn.data.BeamFnDataInboundObserver2.awaitCompletion(BeamFnDataInboundObserver2.java:123)
+        at org.apache.beam.fn.harness.control.ProcessBundleHandler.processBundle(ProcessBundleHandler.java:546)
+        at org.apache.beam.fn.harness.control.BeamFnControlClient.delegateOnInstructionRequestType(BeamFnControlClient.java:151)
+        at org.apache.beam.fn.harness.control.BeamFnControlClient$InboundObserver.lambda$onNext$0(BeamFnControlClient.java:116)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at org.apache.beam.sdk.util.UnboundedScheduledExecutorService$ScheduledFutureTask.run(UnboundedScheduledExecutorService.java:162)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+        at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv
+        at org.apache.beam.sdk.io.FileSystems.maybeAdjustEmptyMatchResult(FileSystems.java:171)
+        at org.apache.beam.sdk.io.FileSystems.match(FileSystems.java:158)
+        at org.apache.beam.sdk.io.FileBasedSource.getEstimatedSizeBytes(FileBasedSource.java:226)
+        at org.apache.beam.sdk.io.Read$BoundedSourceAsSDFWrapperFn.splitRestriction(Read.java:290)
+
+
+    at org.apache.beam.runners.portability.JobServicePipelineResult.propagateErrors (JobServicePipelineResult.java:176)
+    at org.apache.beam.runners.portability.JobServicePipelineResult.waitUntilFinish (JobServicePipelineResult.java:117)
+    at org.apache.beam.examples.multilanguage.SklearnMnistClassification.runExample (SklearnMnistClassification.java:123)
+    at org.apache.beam.examples.multilanguage.SklearnMnistClassification.main (SklearnMnistClassification.java:159)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:282)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  49.553 s
+[INFO] Finished at: 2022-12-01T10:00:33+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:1.6.0:java (default-cli) on project multi-language-beam: An exception occured while executing the Java class. The Runner experienced the following error during execution:
+[ERROR] Traceback (most recent call last):
+[ERROR]   File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/local_job_service.py", line 296, in _run_job
+[ERROR]     self.result = self._invoke_runner()
+[ERROR]   File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/local_job_service.py", line 318, in _invoke_runner
+[ERROR]     return fn_runner.FnApiRunner(
+[ERROR]   File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 212, in run_via_runner_api
+[ERROR]     return self.run_stages(stage_context, stages)
+[ERROR]   File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 442, in run_stages
+[ERROR]     bundle_results = self._execute_bundle(
+[ERROR]   File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 770, in _execute_bundle
+[ERROR]     self._run_bundle(
+[ERROR]   File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 999, in _run_bundle
+[ERROR]     result, splits = bundle_manager.process_bundle(
+[ERROR]   File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1348, in process_bundle
+[ERROR]     raise RuntimeError(result.error)
+[ERROR] RuntimeError: org.apache.beam.sdk.util.UserCodeException: java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv
+[ERROR]         at org.apache.beam.sdk.util.UserCodeException.wrap(UserCodeException.java:39)
+[ERROR]         at org.apache.beam.sdk.io.Read$BoundedSourceAsSDFWrapperFn$DoFnInvoker.invokeSplitRestriction(Unknown Source)
+[ERROR]         at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForSplitRestriction(FnApiDoFnRunner.java:889)
+[ERROR]         at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+[ERROR]         at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+[ERROR]         at org.apache.beam.fn.harness.FnApiDoFnRunner.outputTo(FnApiDoFnRunner.java:1791)
+[ERROR]         at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForPairWithRestriction(FnApiDoFnRunner.java:826)
+[ERROR]         at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+[ERROR]         at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+[ERROR]         at org.apache.beam.fn.harness.FnApiDoFnRunner.outputTo(FnApiDoFnRunner.java:1791)
+[ERROR]         at org.apache.beam.fn.harness.FnApiDoFnRunner.access$3000(FnApiDoFnRunner.java:145)
+[ERROR]         at org.apache.beam.fn.harness.FnApiDoFnRunner$NonWindowObservingProcessBundleContext.outputWithTimestamp(FnApiDoFnRunner.java:2360)
+[ERROR]         at org.apache.beam.fn.harness.FnApiDoFnRunner$ProcessBundleContextBase.output(FnApiDoFnRunner.java:2530)
+[ERROR]         at org.apache.beam.sdk.transforms.DoFnOutputReceivers$WindowedContextOutputReceiver.output(DoFnOutputReceivers.java:78)
+[ERROR]         at org.apache.beam.sdk.io.Read$OutputSingleSource.processElement(Read.java:1018)
+[ERROR]         at org.apache.beam.sdk.io.Read$OutputSingleSource$DoFnInvoker.invokeProcessElement(Unknown Source)
+[ERROR]         at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForParDo(FnApiDoFnRunner.java:801)
+[ERROR]         at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+[ERROR]         at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+[ERROR]         at org.apache.beam.fn.harness.BeamFnDataReadRunner.forwardElementToConsumer(BeamFnDataReadRunner.java:213)
+[ERROR]         at org.apache.beam.sdk.fn.data.BeamFnDataInboundObserver2.multiplexElements(BeamFnDataInboundObserver2.java:158)
+[ERROR]         at org.apache.beam.sdk.fn.data.BeamFnDataInboundObserver2.awaitCompletion(BeamFnDataInboundObserver2.java:123)
+[ERROR]         at org.apache.beam.fn.harness.control.ProcessBundleHandler.processBundle(ProcessBundleHandler.java:546)
+[ERROR]         at org.apache.beam.fn.harness.control.BeamFnControlClient.delegateOnInstructionRequestType(BeamFnControlClient.java:151)
+[ERROR]         at org.apache.beam.fn.harness.control.BeamFnControlClient$InboundObserver.lambda$onNext$0(BeamFnControlClient.java:116)
+[ERROR]         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+[ERROR]         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[ERROR]         at org.apache.beam.sdk.util.UnboundedScheduledExecutorService$ScheduledFutureTask.run(UnboundedScheduledExecutorService.java:162)
+[ERROR]         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[ERROR]         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[ERROR]         at java.base/java.lang.Thread.run(Thread.java:829)
+[ERROR] Caused by: java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv
+[ERROR]         at org.apache.beam.sdk.io.FileSystems.maybeAdjustEmptyMatchResult(FileSystems.java:171)
+[ERROR]         at org.apache.beam.sdk.io.FileSystems.match(FileSystems.java:158)
+[ERROR]         at org.apache.beam.sdk.io.FileBasedSource.getEstimatedSizeBytes(FileBasedSource.java:226)
+[ERROR]         at org.apache.beam.sdk.io.Read$BoundedSourceAsSDFWrapperFn.splitRestriction(Read.java:290)
+[ERROR] 
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

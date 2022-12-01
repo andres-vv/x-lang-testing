@@ -1,0 +1,319 @@
+sh direct_runner_job_server.sh
+INFO:apache_beam.runners.portability.local_job_service:Grpc server started at localhost on port 8080
+INFO:__main__:Listening for beam jobs on port 8080.
+INFO:apache_beam.runners.portability.abstract_job_service:Running job 'sklearnmnistclassification-andresvervaecke-1201085953-16487746-d9b44259-bffc-42c6-957a-c1d2136065d1'
+INFO:root:Default Python SDK image for environment is apache/beam_python3.9_sdk:2.43.0
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function annotate_downstream_side_inputs at 0x12c76b280> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function fix_side_input_pcoll_coders at 0x12c76b3a0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function pack_combiners at 0x12c76b8b0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function lift_combiners at 0x12c76b940> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_sdf at 0x12c76baf0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_gbk at 0x12c76bb80> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sink_flattens at 0x12c76bca0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function greedily_fuse at 0x12c76bd30> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function read_to_impulse at 0x12c76bdc0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function impulse_to_input at 0x12c76be50> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sort_stages at 0x12c76c0d0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function add_impulse_to_dangling_transforms at 0x12c76c1f0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function setup_timer_mapping at 0x12c76c040> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function populate_data_channel_coders at 0x12c76c160> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:starting control server on port 53061
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:starting data server on port 53062
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:starting state server on port 53063
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:starting logging server on port 53064
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.DockerSdkWorkerHandler object at 0x12d547d30> for environment beam:env:docker:v1 (beam:env:docker:v1, b'\n\x1dapache/beam_java11_sdk:2.43.0')
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Attempting to pull image apache/beam_java11_sdk:2.43.0
+2.43.0: Pulling from apache/beam_java11_sdk
+Digest: sha256:e57cca7e736884ecc55cccc2b5cb8517beb7fb87340e94518aeae68965ab72f6
+Status: Image is up to date for apache/beam_java11_sdk:2.43.0
+docker.io/apache/beam_java11_sdk:2.43.0
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Waiting for docker to start up. Current status is running
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Docker container is running. container_id = b'bbbb13d9f9b7847c86f0f6adf76923e4df6aadbd2465ea0d6bd7c5199d97bf30', worker_id = worker_0
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.DockerSdkWorkerHandler object at 0x12d575e50> for environment External_0_Environment_default_environment_1 (beam:env:docker:v1, b'\n apache/beam_python3.9_sdk:2.43.0')
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Attempting to pull image apache/beam_python3.9_sdk:2.43.0
+2.43.0: Pulling from apache/beam_python3.9_sdk
+Digest: sha256:372abe1d342447118d517ed1325969115e2df03f09fc7604e606c7552380b2ce
+Status: Image is up to date for apache/beam_python3.9_sdk:2.43.0
+docker.io/apache/beam_python3.9_sdk:2.43.0
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Waiting for docker to start up. Current status is running
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Docker container is running. container_id = b'b840598d7081933516c3cdec19d2de8e960485e73c881d4f487769077cbd753e', worker_id = worker_1
+INFO:__main__:Listening for beam jobs on port 8080.
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885223
+  nanos: 263000000
+}
+message: "Fn Harness started"
+log_location: "org.apache.beam.fn.harness.FnHarness"
+thread: "1"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885224
+  nanos: 209000000
+}
+message: "Entering instruction processing loop"
+log_location: "org.apache.beam.fn.harness.FnHarness"
+thread: "1"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885227
+  nanos: 791409730
+}
+message: "semi_persistent_directory: /tmp"
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker_main.py:110"
+thread: "MainThread"
+
+WARNING:root:severity: WARN
+timestamp {
+  seconds: 1669885227
+  nanos: 797559022
+}
+message: "No session file found: /tmp/staged/pickled_main_session. Functions defined in __main__ (interactive session) may fail."
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker_main.py:327"
+thread: "MainThread"
+
+WARNING:root:severity: WARN
+timestamp {
+  seconds: 1669885228
+  nanos: 10019779
+}
+message: "Discarding unparseable args: [\'--app_name=SklearnMnistClassification\', \'--default_environment_config=None\', \'--default_environment_type=None\', \'--expansion_service=\', \'--files_to_stage=/Users/andresvervaecke/projects/client-work/Beam/x-lang/multi-language-beam/target/classes\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-sdks-java-core/2.43.0/beam-sdks-java-core-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-model-pipeline/2.43.0/beam-model-pipeline-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/conscrypt/conscrypt-openjdk-uber/2.5.2/conscrypt-openjdk-uber-2.5.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-model-job-management/2.43.0/beam-model-job-management-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-vendor-grpc-1_48_1/0.1/beam-vendor-grpc-1_48_1-0.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-vendor-guava-26_0-jre/0.1/beam-vendor-guava-26_0-jre-0.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/net/bytebuddy/byte-buddy/1.12.14/byte-buddy-1.12.14.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/errorprone/error_prone_annotations/2.10.0/error_prone_annotations-2.10.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/avro/avro/1.8.2/avro-1.8.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/thoughtworks/paranamer/paranamer/2.7/paranamer-2.7.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/tukaani/xz/1.5/xz-1.5.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/xerial/snappy/snappy-java/1.1.8.4/snappy-java-1.1.8.4.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-sdks-java-io-google-cloud-platform/2.43.0/beam-sdks-java-io-google-cloud-platform-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/checkerframework/checker-qual/3.10.0/checker-qual-3.10.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-runners-core-java/2.43.0/beam-runners-core-java-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-sdks-java-fn-execution/2.43.0/beam-sdks-java-fn-execution-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-sdks-java-expansion-service/2.43.0/beam-sdks-java-expansion-service-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.3/jackson-dataformat-yaml-2.13.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-sdks-java-extensions-google-cloud-platform-core/2.43.0/beam-sdks-java-extensions-google-cloud-platform-core-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/bigdataoss/gcsio/2.2.6/gcsio-2.2.6.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-cloud-storage-v2/2.2.2-alpha/grpc-google-cloud-storage-v2-2.2.2-alpha.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-storage-v2/2.2.2-alpha/proto-google-cloud-storage-v2-2.2.2-alpha.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/opencensus/opencensus-impl/0.31.0/opencensus-impl-0.31.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/opencensus/opencensus-impl-core/0.31.0/opencensus-impl-core-0.31.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/opencensus/opencensus-exporter-stats-stackdriver/0.31.0/opencensus-exporter-stats-stackdriver-0.31.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/opencensus/opencensus-contrib-exemplar-util/0.31.0/opencensus-contrib-exemplar-util-0.31.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/opencensus/opencensus-contrib-resource-util/0.31.0/opencensus-contrib-resource-util-0.31.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/opencensus/opencensus-exporter-metrics-util/0.31.0/opencensus-exporter-metrics-util-0.31.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/apis/google-api-services-cloudresourcemanager/v1-rev20220828-2.0.0/google-api-services-cloudresourcemanager-v1-rev20220828-2.0.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-sdks-java-extensions-protobuf/2.43.0/beam-sdks-java-extensions-protobuf-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-runners-core-construction-java/2.43.0/beam-runners-core-construction-java-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/github/classgraph/classgraph/4.8.104/classgraph-4.8.104.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-sdks-java-extensions-arrow/2.43.0/beam-sdks-java-extensions-arrow-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/bigdataoss/util/2.2.6/util-2.2.6.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api-client/google-api-client-jackson2/2.0.0/google-api-client-jackson2-2.0.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/apis/google-api-services-iamcredentials/v1-rev20210326-1.32.1/google-api-services-iamcredentials-v1-rev20210326-1.32.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/auto/value/auto-value-annotations/1.9/auto-value-annotations-1.9.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/flogger/google-extensions/0.7.1/google-extensions-0.7.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/flogger/flogger-system-backend/0.7.3/flogger-system-backend-0.7.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/flogger/flogger/0.7.3/flogger-0.7.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/checkerframework/checker-compat-qual/2.5.3/checker-compat-qual-2.5.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/gax/2.19.2/gax-2.19.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/gax-grpc/2.19.2/gax-grpc-2.19.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-googleapis/1.49.2/grpc-googleapis-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/gax-grpc/2.19.2/gax-grpc-2.19.2-testlib.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/gax-httpjson/0.104.2/gax-httpjson-0.104.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/api-common/2.2.1/api-common-2.2.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/apis/google-api-services-healthcare/v1-rev20220818-2.0.0/google-api-services-healthcare-v1-rev20220818-2.0.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/apis/google-api-services-storage/v1-rev20220705-2.0.0/google-api-services-storage-v1-rev20220705-2.0.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/auth/google-auth-library-credentials/1.11.0/google-auth-library-credentials-1.11.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/auth/google-auth-library-oauth2-http/1.11.0/google-auth-library-oauth2-http-1.11.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/google-cloud-bigquerystorage/2.23.1/google-cloud-bigquerystorage-2.23.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-protobuf-lite/1.49.2/grpc-protobuf-lite-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/auto/value/auto-value/1.9/auto-value-1.9.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-bigquerystorage-v1beta1/0.147.1/proto-google-cloud-bigquerystorage-v1beta1-0.147.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-bigquerystorage-v1beta2/0.147.1/proto-google-cloud-bigquerystorage-v1beta2-0.147.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/json/json/20200518/json-20200518.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.22/animal-sniffer-annotations-1.22.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/perfmark/perfmark-api/0.25.0/perfmark-api-0.25.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-iam-v1/1.6.2/proto-google-iam-v1-1.6.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-cloud-bigquerystorage-v1beta1/0.147.1/grpc-google-cloud-bigquerystorage-v1beta1-0.147.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-cloud-bigquerystorage-v1beta2/0.147.1/grpc-google-cloud-bigquerystorage-v1beta2-0.147.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-cloud-bigquerystorage-v1/2.23.1/grpc-google-cloud-bigquerystorage-v1-2.23.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/bigtable/bigtable-client-core/1.26.3/bigtable-client-core-1.26.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-common-protos/2.9.6/grpc-google-common-protos-2.9.6.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-cloud-bigtable-v2/2.14.1/grpc-google-cloud-bigtable-v2-2.14.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-cloud-bigtable-admin-v2/2.14.1/grpc-google-cloud-bigtable-admin-v2-2.14.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/google-cloud-core-http/2.8.20/google-cloud-core-http-2.8.20.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/http-client/google-http-client-appengine/1.42.2/google-http-client-appengine-1.42.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/bigtable/bigtable-metrics-api/1.26.3/bigtable-metrics-api-1.26.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/opencensus/opencensus-contrib-grpc-util/0.28.0/opencensus-contrib-grpc-util-0.28.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/google-cloud-bigtable/2.14.1/google-cloud-bigtable-2.14.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/google-cloud-bigtable-stats/2.14.1/google-cloud-bigtable-stats-2.14.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/lmax/disruptor/3.4.2/disruptor-3.4.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-rls/1.49.2/grpc-rls-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/google-cloud-monitoring/3.4.6/google-cloud-monitoring-3.4.6.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/opencensus/opencensus-proto/0.2.0/opencensus-proto-0.2.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-services/1.49.2/grpc-services-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/re2j/re2j/1.6/re2j-1.6.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-monitoring-v3/3.4.6/proto-google-cloud-monitoring-v3-3.4.6.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/google-cloud-core/2.8.20/google-cloud-core-2.8.20.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/google-cloud-core-grpc/2.8.20/google-cloud-core-grpc-2.8.20.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/datastore/datastore-v1-proto-client/2.9.0/datastore-v1-proto-client-2.9.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/http-client/google-http-client-protobuf/1.42.2/google-http-client-protobuf-1.42.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/google-cloud-firestore/3.6.0/google-cloud-firestore-3.6.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/proto-google-cloud-firestore-bundle-v1/3.6.0/proto-google-cloud-firestore-bundle-v1-3.6.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/google-cloud-pubsublite/1.7.1/google-cloud-pubsublite-1.7.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.67/bcpkix-jdk15on-1.67.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.67/bcprov-jdk15on-1.67.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/google-cloud-pubsub/1.120.20/google-cloud-pubsub-1.120.20.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/google-cloud-spanner/6.31.2/google-cloud-spanner-6.31.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/cloud/grpc-gcp/1.2.1/grpc-gcp-1.2.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-spanner-admin-instance-v1/6.31.2/proto-google-cloud-spanner-admin-instance-v1-6.31.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-cloud-spanner-admin-instance-v1/6.31.2/grpc-google-cloud-spanner-admin-instance-v1-6.31.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-cloud-spanner-v1/6.31.2/grpc-google-cloud-spanner-v1-6.31.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-cloud-spanner-admin-database-v1/6.31.2/grpc-google-cloud-spanner-admin-database-v1-6.31.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/code/gson/gson/2.9.1/gson-2.9.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/http-client/google-http-client-jackson2/1.42.2/google-http-client-jackson2-1.42.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/oauth-client/google-oauth-client/1.34.1/google-oauth-client-1.34.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-alts/1.49.2/grpc-alts-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-api/1.49.2/grpc-api-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-auth/1.49.2/grpc-auth-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-core/1.49.2/grpc-core-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-census/1.49.2/grpc-census-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/opencensus/opencensus-contrib-grpc-metrics/0.31.0/opencensus-contrib-grpc-metrics-0.31.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-context/1.49.2/grpc-context-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-grpclb/1.49.2/grpc-grpclb-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-netty/1.49.2/grpc-netty-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-codec-http2/4.1.77.Final/netty-codec-http2-4.1.77.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-codec-http/4.1.77.Final/netty-codec-http-4.1.77.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-handler-proxy/4.1.77.Final/netty-handler-proxy-4.1.77.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-codec-socks/4.1.77.Final/netty-codec-socks-4.1.77.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.77.Final/netty-transport-native-unix-common-4.1.77.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-netty-shaded/1.49.2/grpc-netty-shaded-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-protobuf/1.49.2/grpc-protobuf-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-stub/1.49.2/grpc-stub-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/grpc/grpc-xds/1.49.2/grpc-xds-1.49.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-cloud-pubsub-v1/1.102.20/grpc-google-cloud-pubsub-v1-1.102.20.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/grpc-google-cloud-pubsublite-v1/1.7.1/grpc-google-cloud-pubsublite-v1-1.7.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.13.3/jackson-datatype-joda-2.13.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.3/jackson-datatype-jsr310-2.13.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-handler/4.1.77.Final/netty-handler-4.1.77.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-resolver/4.1.77.Final/netty-resolver-4.1.77.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-buffer/4.1.77.Final/netty-buffer-4.1.77.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-transport/4.1.77.Final/netty-transport-4.1.77.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-codec/4.1.77.Final/netty-codec-4.1.77.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.52.Final/netty-tcnative-boringssl-static-2.0.52.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-tcnative-classes/2.0.52.Final/netty-tcnative-classes-2.0.52.Final.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.52.Final/netty-tcnative-boringssl-static-2.0.52.Final-linux-x86_64.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.52.Final/netty-tcnative-boringssl-static-2.0.52.Final-linux-aarch_64.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.52.Final/netty-tcnative-boringssl-static-2.0.52.Final-osx-x86_64.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.52.Final/netty-tcnative-boringssl-static-2.0.52.Final-osx-aarch_64.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.52.Final/netty-tcnative-boringssl-static-2.0.52.Final-windows-x86_64.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-bigquerystorage-v1/2.23.1/proto-google-cloud-bigquerystorage-v1-2.23.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-bigtable-admin-v2/2.14.1/proto-google-cloud-bigtable-admin-v2-2.14.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-bigtable-v2/2.14.1/proto-google-cloud-bigtable-v2-2.14.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-datastore-v1/0.102.5/proto-google-cloud-datastore-v1-0.102.5.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-firestore-v1/3.6.0/proto-google-cloud-firestore-v1-3.6.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-pubsub-v1/1.102.20/proto-google-cloud-pubsub-v1-1.102.20.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-pubsublite-v1/1.7.1/proto-google-cloud-pubsublite-v1-1.7.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-spanner-admin-database-v1/6.31.2/proto-google-cloud-spanner-admin-database-v1-6.31.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-cloud-spanner-v1/6.31.2/proto-google-cloud-spanner-v1-6.31.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.9.6/proto-google-common-protos-2.9.6.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/protobuf/protobuf-java/3.21.7/protobuf-java-3.21.7.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/protobuf/protobuf-java-util/3.21.7/protobuf-java-util-3.21.7.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/arrow/arrow-memory-core/5.0.0/arrow-memory-core-5.0.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/arrow/arrow-vector/5.0.0/arrow-vector-5.0.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/arrow/arrow-format/5.0.0/arrow-format-5.0.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/flatbuffers/flatbuffers-java/1.12.0/flatbuffers-java-1.12.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/http-client/google-http-client-gson/1.42.2/google-http-client-gson-1.42.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/threeten/threetenbp/1.4.4/threetenbp-1.4.4.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-sdks-java-extensions-python/2.43.0/beam-sdks-java-extensions-python-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/api-client/google-api-client/2.0.0/google-api-client-2.0.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/http-client/google-http-client-apache-v2/1.42.2/google-http-client-apache-v2-1.42.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/apis/google-api-services-bigquery/v2-rev20220924-2.0.0/google-api-services-bigquery-v2-rev20220924-2.0.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/http-client/google-http-client/1.42.2/google-http-client-1.42.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/opencensus/opencensus-api/0.31.1/opencensus-api-0.31.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/io/opencensus/opencensus-contrib-http-util/0.31.1/opencensus-contrib-http-util-0.31.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/com/google/apis/google-api-services-pubsub/v1-rev20220904-2.0.0/google-api-services-pubsub-v1-rev20220904-2.0.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/joda-time/joda-time/2.10.10/joda-time-2.10.10.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/slf4j/slf4j-jdk14/1.7.30/slf4j-jdk14-1.7.30.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-runners-portability-java/2.43.0/beam-runners-portability-java-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-runners-java-fn-execution/2.43.0/beam-runners-java-fn-execution-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-model-fn-execution/2.43.0/beam-model-fn-execution-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-runners-java-job-service/2.43.0/beam-runners-java-job-service-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/args4j/args4j/2.33/args4j-2.33.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/beam/beam-sdks-java-harness/2.43.0/beam-sdks-java-harness-2.43.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/conf/logging\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-builder-support-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-resolver-util-1.6.3.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/plexus-component-annotations-2.1.0.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/plexus-sec-dispatcher-2.0.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/slf4j-api-1.7.36.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-resolver-spi-1.6.3.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/plexus-utils-3.3.1.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/plexus-interpolation-1.26.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-core-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-embedder-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/plexus-cipher-2.0.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-model-builder-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/javax.annotation-api-1.2.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-settings-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/jcl-over-slf4j-1.7.36.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-model-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/commons-cli-1.4.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-resolver-transport-wagon-1.6.3.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/wagon-file-3.5.1.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-slf4j-provider-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/org.eclipse.sisu.inject-0.3.5.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-artifact-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-resolver-provider-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/commons-io-2.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/wagon-http-3.5.1-shaded.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-repository-metadata-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-resolver-connector-basic-1.6.3.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-resolver-api-1.6.3.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-shared-utils-3.3.4.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-settings-builder-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/org.eclipse.sisu.plexus-0.3.5.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/wagon-provider-api-3.5.1.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-plugin-api-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-compat-3.8.6.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/guice-4.2.2-no_aop.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/maven-resolver-impl-1.6.3.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/javax.inject-1.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/commons-lang3-3.8.1.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/jansi-2.4.0.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/lib/guava-25.1-android.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/codehaus/mojo/exec-maven-plugin/1.6.0/exec-maven-plugin-1.6.0.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar\', \'--files_to_stage=/Users/andresvervaecke/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar\', \'--files_to_stage=/Users/andresvervaecke/tools/apache-maven-3.8.6/boot/plexus-classworlds-2.6.0.jar\', \'--input=src/main/resources/input.csv\', \'--model_path=src/main/resources/model\', \'--options_id=0\', \'--stable_unique_names=WARNING\']"
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/options/pipeline_options.py:351"
+thread: "MainThread"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885228
+  nanos: 24003028
+}
+message: "Pipeline_options: {\'runner\': \'org.apache.beam.runners.portability.PortableRunner\', \'job_name\': \'sklearnmnistclassification-andresvervaecke-1201085953-16487746\', \'experiments\': [\'None\'], \'job_endpoint\': \'localhost:8080\', \'environment_options\': [\'None\'], \'output_executable_path\': \'src/main/resources/output\'}"
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker_main.py:126"
+thread: "MainThread"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885228
+  nanos: 161110877
+}
+message: "Creating state cache with size 0"
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/statecache.py:234"
+thread: "MainThread"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885228
+  nanos: 162143230
+}
+message: "Creating insecure control channel for host.docker.internal:53061."
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker.py:182"
+thread: "MainThread"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885228
+  nanos: 177509546
+}
+message: "Control channel established."
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker.py:190"
+thread: "MainThread"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885228
+  nanos: 181227207
+}
+message: "Initializing SDKHarness with unbounded number of workers."
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker.py:235"
+thread: "MainThread"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885228
+  nanos: 271743774
+}
+message: "Python sdk harness starting."
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker_main.py:186"
+thread: "MainThread"
+
+ERROR:root:severity: ERROR
+timestamp {
+  seconds: 1669885229
+  nanos: 151000000
+}
+message: "Exception while trying to handle InstructionRequest bundle_1"
+trace: "org.apache.beam.sdk.util.UserCodeException: java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv\n\tat org.apache.beam.sdk.util.UserCodeException.wrap(UserCodeException.java:39)\n\tat org.apache.beam.sdk.io.Read$BoundedSourceAsSDFWrapperFn$DoFnInvoker.invokeSplitRestriction(Unknown Source)\n\tat org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForSplitRestriction(FnApiDoFnRunner.java:889)\n\tat org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)\n\tat org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)\n\tat org.apache.beam.fn.harness.FnApiDoFnRunner.outputTo(FnApiDoFnRunner.java:1791)\n\tat org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForPairWithRestriction(FnApiDoFnRunner.java:826)\n\tat org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)\n\tat org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)\n\tat org.apache.beam.fn.harness.FnApiDoFnRunner.outputTo(FnApiDoFnRunner.java:1791)\n\tat org.apache.beam.fn.harness.FnApiDoFnRunner.access$3000(FnApiDoFnRunner.java:145)\n\tat org.apache.beam.fn.harness.FnApiDoFnRunner$NonWindowObservingProcessBundleContext.outputWithTimestamp(FnApiDoFnRunner.java:2360)\n\tat org.apache.beam.fn.harness.FnApiDoFnRunner$ProcessBundleContextBase.output(FnApiDoFnRunner.java:2530)\n\tat org.apache.beam.sdk.transforms.DoFnOutputReceivers$WindowedContextOutputReceiver.output(DoFnOutputReceivers.java:78)\n\tat org.apache.beam.sdk.io.Read$OutputSingleSource.processElement(Read.java:1018)\n\tat org.apache.beam.sdk.io.Read$OutputSingleSource$DoFnInvoker.invokeProcessElement(Unknown Source)\n\tat org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForParDo(FnApiDoFnRunner.java:801)\n\tat org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)\n\tat org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)\n\tat org.apache.beam.fn.harness.BeamFnDataReadRunner.forwardElementToConsumer(BeamFnDataReadRunner.java:213)\n\tat org.apache.beam.sdk.fn.data.BeamFnDataInboundObserver2.multiplexElements(BeamFnDataInboundObserver2.java:158)\n\tat org.apache.beam.sdk.fn.data.BeamFnDataInboundObserver2.awaitCompletion(BeamFnDataInboundObserver2.java:123)\n\tat org.apache.beam.fn.harness.control.ProcessBundleHandler.processBundle(ProcessBundleHandler.java:546)\n\tat org.apache.beam.fn.harness.control.BeamFnControlClient.delegateOnInstructionRequestType(BeamFnControlClient.java:151)\n\tat org.apache.beam.fn.harness.control.BeamFnControlClient$InboundObserver.lambda$onNext$0(BeamFnControlClient.java:116)\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat org.apache.beam.sdk.util.UnboundedScheduledExecutorService$ScheduledFutureTask.run(UnboundedScheduledExecutorService.java:162)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv\n\tat org.apache.beam.sdk.io.FileSystems.maybeAdjustEmptyMatchResult(FileSystems.java:171)\n\tat org.apache.beam.sdk.io.FileSystems.match(FileSystems.java:158)\n\tat org.apache.beam.sdk.io.FileBasedSource.getEstimatedSizeBytes(FileBasedSource.java:226)\n\tat org.apache.beam.sdk.io.Read$BoundedSourceAsSDFWrapperFn.splitRestriction(Read.java:290)\n"
+instruction_id: "bundle_1"
+log_location: "org.apache.beam.fn.harness.control.BeamFnControlClient"
+thread: "24"
+
+bbbb13d9f9b7847c86f0f6adf76923e4df6aadbd2465ea0d6bd7c5199d97bf30
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885230
+  nanos: 571456670
+}
+message: "No more requests from control plane"
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker.py:264"
+thread: "MainThread"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885230
+  nanos: 572150230
+}
+message: "SDK Harness waiting for in-flight requests to complete"
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker.py:265"
+thread: "MainThread"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885230
+  nanos: 572496652
+}
+message: "Closing all cached grpc data channels."
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/data_plane.py:805"
+thread: "MainThread"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885230
+  nanos: 572934627
+}
+message: "Closing all cached gRPC state handlers."
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker.py:875"
+thread: "MainThread"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885230
+  nanos: 574592828
+}
+message: "Done consuming work."
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker.py:277"
+thread: "MainThread"
+
+INFO:root:severity: INFO
+timestamp {
+  seconds: 1669885230
+  nanos: 575156927
+}
+message: "Python sdk harness exiting."
+log_location: "/usr/local/lib/python3.9/site-packages/apache_beam/runners/worker/sdk_worker_main.py:188"
+thread: "MainThread"
+
+b840598d7081933516c3cdec19d2de8e960485e73c881d4f487769077cbd753e
+ERROR:apache_beam.runners.portability.local_job_service:Error running pipeline.
+Traceback (most recent call last):
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/local_job_service.py", line 296, in _run_job
+    self.result = self._invoke_runner()
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/local_job_service.py", line 318, in _invoke_runner
+    return fn_runner.FnApiRunner(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 212, in run_via_runner_api
+    return self.run_stages(stage_context, stages)
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 442, in run_stages
+    bundle_results = self._execute_bundle(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 770, in _execute_bundle
+    self._run_bundle(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 999, in _run_bundle
+    result, splits = bundle_manager.process_bundle(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1348, in process_bundle
+    raise RuntimeError(result.error)
+RuntimeError: org.apache.beam.sdk.util.UserCodeException: java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv
+	at org.apache.beam.sdk.util.UserCodeException.wrap(UserCodeException.java:39)
+	at org.apache.beam.sdk.io.Read$BoundedSourceAsSDFWrapperFn$DoFnInvoker.invokeSplitRestriction(Unknown Source)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForSplitRestriction(FnApiDoFnRunner.java:889)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.outputTo(FnApiDoFnRunner.java:1791)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForPairWithRestriction(FnApiDoFnRunner.java:826)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.outputTo(FnApiDoFnRunner.java:1791)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.access$3000(FnApiDoFnRunner.java:145)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner$NonWindowObservingProcessBundleContext.outputWithTimestamp(FnApiDoFnRunner.java:2360)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner$ProcessBundleContextBase.output(FnApiDoFnRunner.java:2530)
+	at org.apache.beam.sdk.transforms.DoFnOutputReceivers$WindowedContextOutputReceiver.output(DoFnOutputReceivers.java:78)
+	at org.apache.beam.sdk.io.Read$OutputSingleSource.processElement(Read.java:1018)
+	at org.apache.beam.sdk.io.Read$OutputSingleSource$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForParDo(FnApiDoFnRunner.java:801)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+	at org.apache.beam.fn.harness.BeamFnDataReadRunner.forwardElementToConsumer(BeamFnDataReadRunner.java:213)
+	at org.apache.beam.sdk.fn.data.BeamFnDataInboundObserver2.multiplexElements(BeamFnDataInboundObserver2.java:158)
+	at org.apache.beam.sdk.fn.data.BeamFnDataInboundObserver2.awaitCompletion(BeamFnDataInboundObserver2.java:123)
+	at org.apache.beam.fn.harness.control.ProcessBundleHandler.processBundle(ProcessBundleHandler.java:546)
+	at org.apache.beam.fn.harness.control.BeamFnControlClient.delegateOnInstructionRequestType(BeamFnControlClient.java:151)
+	at org.apache.beam.fn.harness.control.BeamFnControlClient$InboundObserver.lambda$onNext$0(BeamFnControlClient.java:116)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.beam.sdk.util.UnboundedScheduledExecutorService$ScheduledFutureTask.run(UnboundedScheduledExecutorService.java:162)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv
+	at org.apache.beam.sdk.io.FileSystems.maybeAdjustEmptyMatchResult(FileSystems.java:171)
+	at org.apache.beam.sdk.io.FileSystems.match(FileSystems.java:158)
+	at org.apache.beam.sdk.io.FileBasedSource.getEstimatedSizeBytes(FileBasedSource.java:226)
+	at org.apache.beam.sdk.io.Read$BoundedSourceAsSDFWrapperFn.splitRestriction(Read.java:290)
+
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/Users/andresvervaecke/.pyenv/versions/3.9.7/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/Users/andresvervaecke/.pyenv/versions/3.9.7/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/local_job_service.py", line 296, in _run_job
+    self.result = self._invoke_runner()
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/local_job_service.py", line 318, in _invoke_runner
+    return fn_runner.FnApiRunner(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 212, in run_via_runner_api
+    return self.run_stages(stage_context, stages)
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 442, in run_stages
+    bundle_results = self._execute_bundle(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 770, in _execute_bundle
+    self._run_bundle(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 999, in _run_bundle
+    result, splits = bundle_manager.process_bundle(
+  File "/Users/andresvervaecke/projects/client-work/Beam/x-lang/.venv/lib/python3.9/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1348, in process_bundle
+    raise RuntimeError(result.error)
+RuntimeError: org.apache.beam.sdk.util.UserCodeException: java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv
+	at org.apache.beam.sdk.util.UserCodeException.wrap(UserCodeException.java:39)
+	at org.apache.beam.sdk.io.Read$BoundedSourceAsSDFWrapperFn$DoFnInvoker.invokeSplitRestriction(Unknown Source)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForSplitRestriction(FnApiDoFnRunner.java:889)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.outputTo(FnApiDoFnRunner.java:1791)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForPairWithRestriction(FnApiDoFnRunner.java:826)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.outputTo(FnApiDoFnRunner.java:1791)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.access$3000(FnApiDoFnRunner.java:145)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner$NonWindowObservingProcessBundleContext.outputWithTimestamp(FnApiDoFnRunner.java:2360)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner$ProcessBundleContextBase.output(FnApiDoFnRunner.java:2530)
+	at org.apache.beam.sdk.transforms.DoFnOutputReceivers$WindowedContextOutputReceiver.output(DoFnOutputReceivers.java:78)
+	at org.apache.beam.sdk.io.Read$OutputSingleSource.processElement(Read.java:1018)
+	at org.apache.beam.sdk.io.Read$OutputSingleSource$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.fn.harness.FnApiDoFnRunner.processElementForParDo(FnApiDoFnRunner.java:801)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:313)
+	at org.apache.beam.fn.harness.data.PCollectionConsumerRegistry$MetricTrackingFnDataReceiver.accept(PCollectionConsumerRegistry.java:245)
+	at org.apache.beam.fn.harness.BeamFnDataReadRunner.forwardElementToConsumer(BeamFnDataReadRunner.java:213)
+	at org.apache.beam.sdk.fn.data.BeamFnDataInboundObserver2.multiplexElements(BeamFnDataInboundObserver2.java:158)
+	at org.apache.beam.sdk.fn.data.BeamFnDataInboundObserver2.awaitCompletion(BeamFnDataInboundObserver2.java:123)
+	at org.apache.beam.fn.harness.control.ProcessBundleHandler.processBundle(ProcessBundleHandler.java:546)
+	at org.apache.beam.fn.harness.control.BeamFnControlClient.delegateOnInstructionRequestType(BeamFnControlClient.java:151)
+	at org.apache.beam.fn.harness.control.BeamFnControlClient$InboundObserver.lambda$onNext$0(BeamFnControlClient.java:116)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.beam.sdk.util.UnboundedScheduledExecutorService$ScheduledFutureTask.run(UnboundedScheduledExecutorService.java:162)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv
+	at org.apache.beam.sdk.io.FileSystems.maybeAdjustEmptyMatchResult(FileSystems.java:171)
+	at org.apache.beam.sdk.io.FileSystems.match(FileSystems.java:158)
+	at org.apache.beam.sdk.io.FileBasedSource.getEstimatedSizeBytes(FileBasedSource.java:226)
+	at org.apache.beam.sdk.io.Read$BoundedSourceAsSDFWrapperFn.splitRestriction(Read.java:290)
