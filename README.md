@@ -14,5 +14,5 @@ Run pipeline with the `run.sh` script
 
 ## Problem
 Reading and Writing locally does not seem to work. 
-Error in logs](https://github.com/andres-vv/x-lang-testing/tree/main/logs):
+Error in [logs](https://github.com/andres-vv/x-lang-testing/tree/main/logs):
 `java.io.FileNotFoundException: No files matched spec: src/main/resources/input.csv`
